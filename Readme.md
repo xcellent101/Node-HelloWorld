@@ -1,4 +1,14 @@
 # Hello World App
+
+It is a simple Hello World App that runs on Node and Express. The App is used to demonstrate the benifits of containerization and the app can be deployed on Cloud Containerless service like Google Cloud Run or Azure ACI.
+
+## Download the Code
+
+Git Clone or download and extract the project zip file
+```
+git clone https://github.com/xcellent101/Node-HelloWorld
+```
+
 ## Dependancies
 
 ### Install Node & NPM
