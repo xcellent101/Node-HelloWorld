@@ -39,3 +39,51 @@ or
 ```
 npm start
 ```
+
+## Containarize the App
+
+### Build the image
+- Make sure to have docker installed and run the below command
+
+```
+docker build -t helloworld:v1 .
+```
+- -t will tag the image with helloworld:v1
+- The dot (.) at the end of the command will build the image locally. You can later push it to external registery (like docker hub or AWS ECR or GCR)
+
+### View Images Locally
+```
+docker images
+docker image list
+```
+
+### Running it locally
+```
+docker run -d -p 8080:8080 helloworld:v1
+```
+is a Docker command used to run a Docker container in detached mode and map the container's port 8080 to the host's port 8080.
+
+Here's a breakdown of the command:
+
+docker run
+: This command is used to create and start a new Docker container.
+
+-d
+: This flag runs the container in detached mode, which means that the container runs in the background and doesn't block the terminal.
+
+-p 8080:8080
+: This flag maps the container's port 8080 to the host's port 8080. The format is 
+-p host_port:container_port
+. This allows you to access the application running inside the container from the host machine via the specified port (8080 in this case).
+
+helloworld:v1
+: This is the name and tag of the Docker image that you want to run. In this case, it's an image named 
+helloworld
+ with the tag 
+v1
+.
+
+When you execute this command, Docker will pull the helloworld:v1  image (if it's not already present locally), create a new container from that image, and start the container in detached mode. The container will be accessible from the host machine at 
+http://localhost:8080
+ or 
+http://host_ip:8080
