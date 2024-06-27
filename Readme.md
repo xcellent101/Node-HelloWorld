@@ -87,3 +87,8 @@ When you execute this command, Docker will pull the helloworld:v1  image (if it'
 http://localhost:8080
  or 
 http://host_ip:8080
+
+## Demo
+Open your favorite browser and type http://127.0.0.1:8080 and you should be getting
+![image](https://github.com/xcellent101/Node-HelloWorld/assets/69367057/bb6fd037-a2ba-493b-960f-a461ddf1d5e9)
+
